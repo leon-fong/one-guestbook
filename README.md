@@ -1,3 +1,5 @@
+<br>
+
 <p align='center'>
   <img src='./static/logo.png' alt='One Guestbook - a online guestbook' width='128'/>
 </p>
@@ -30,7 +32,7 @@ Write a message for a future visitor. <br>
 
 - 📱 Responsive design
 
-- ☁️ Deploy on Cloudflare, zero-config
+- ☁️ Deploy on Vercel, zero-config
 
 ## Contributing
 
