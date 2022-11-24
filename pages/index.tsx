@@ -99,7 +99,7 @@ export default function Home() {
         {session?.user && <Messages />}
       </main>
 
-      <footer className={styles.footer}>Powered by Cloudflare</footer>
+      <footer className={styles.footer}>Powered by Vercel</footer>
     </div>
   )
 }
