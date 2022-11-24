@@ -19,7 +19,7 @@ export default function Nav() {
           <span className="text-2xl font-bold ml-3">One Guestbook</span>
         </a>
         <div className="flex gap-2">
-          <a href="https://github.com/leon-fong/online-guestbook" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-9 h-9  flex items-center justify-center transition-all" rel="noreferrer">
+          <a href="https://github.com/leon-fong/one-guestbook" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-9 h-9  flex items-center justify-center transition-all" rel="noreferrer">
             <svg width="28" height="28" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
