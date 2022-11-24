@@ -26,7 +26,7 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Online Guestbook</title>
         <meta name="description" content="online guestbook" />
@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Online Guestbook</h1>
+        <h1 className="text-4xl sm:text-6xl font-bold py-3">Online Guestbook</h1>
         {!session && (
           <a
             href="/api/auth/callback"
@@ -48,7 +48,7 @@ export default function Home() {
           </a>
         )}
         {session?.user && (
-          <div className="mx-auto max-w-5xl px-4 py-2">
+          <div className="mx-auto w-full max-w-xl  py-2">
             <form className="sm:flex sm:gap-4" onSubmit={submit}>
               <div className="sm:flex-1">
                 <input
@@ -56,7 +56,7 @@ export default function Home() {
                   aria-label="Your message"
                   placeholder="Your message..."
                   required
-                  className="w-full rounded-md border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 text-gray-700  transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400"
+                  className="w-full rounded-md border border-gray-100 px-4 py-3 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 text-gray-700  transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400"
                 />
               </div>
 
