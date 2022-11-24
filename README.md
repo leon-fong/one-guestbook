@@ -2,7 +2,9 @@
   <img src='./static/logo.png' alt='One Guestbook - a online guestbook' width='128'/>
 </p>
 
-<h2 align='center'><b>One Guestbook</b><sup><em>(WIP)</em></sup></h2>
+<p align='center'>
+ <b>One Guestbook</b><sup><em>(WIP)</em></sup>
+</p>
 
 <p align='center'>
 Write a message for a future visitor. <br>
@@ -29,8 +31,6 @@ Write a message for a future visitor. <br>
 - 📱 Responsive design
 
 - ☁️ Deploy on Cloudflare, zero-config
-
-<br>
 
 ## Contributing
 
