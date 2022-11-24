@@ -9,15 +9,16 @@ import { useSWRConfig } from 'swr'
 export default function Home() {
   const { data: session } = useSession()
   const { mutate } = useSWRConfig()
-  const inputEl = useRef(null)
+  const inputEl = useRef<HTMLInputElement>(null)
 
   const submit = async (e: any) => {
     e.preventDefault()
-    if (inputEl.current.value.length > 150) return
+    // TODO add toast tips
+    if (inputEl.current!.value.length > 150) return
     const res = await fetch('api/guestbook', {
       body: JSON.stringify({
-        message: inputEl.current.value,
-        ...session.user,
+        message: inputEl.current?.value,
+        ...session?.user,
       }),
       headers: {
         'Content-type': 'application/json',
@@ -25,7 +26,7 @@ export default function Home() {
       method: 'POST',
     })
 
-    inputEl.current.value = ''
+    inputEl.current!.value = ''
     mutate('/api/guestbook')
   }
 
