@@ -5,7 +5,7 @@
 </p>
 
 <p align='center'>
- <b>One Guestbook</b><sup><em>(WIP)</em></sup>
+ <b>One Guestbook</b>
 </p>
 
 <p align='center'>
